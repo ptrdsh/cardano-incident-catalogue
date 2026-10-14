@@ -43,6 +43,8 @@ last_updated: 2026-10-13
 
 # CID-202001: HAPPY Stake Pool Host Compromise via Exposed Docker Socket
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > In August 2020, the operator of the HAPPY stake pool lost 1,000,064 ADA (about USD 142,000 at the time) after exposing the Docker daemon on the block-producing host to the internet. The operator attributed the compromise to that interface after finding the malicious image `zbrtgwlxz:latest`; an attacker-controlled transaction signed with the pool's cold key and the owner's payment and stake keys transferred the funds on 6 August [1][2][3][11][14]. The Cardano protocol was not at fault and delegators' ADA was not exposed, but the pool retired two days later and paid no member rewards [3][4][8]. No recovery has been reported.
 
 ## Timeline (UTC)

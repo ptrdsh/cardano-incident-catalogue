@@ -45,6 +45,8 @@ last_updated: 2026-10-13
 
 # CID-202605: Deeply Nested Native Script Crashes Tooling on Preprod
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > On 16 September 2026, an open-source project testing the limits of Cardano native scripts (the built-in multisig and time-lock scripts) submitted two unusual but valid transactions to the preprod testnet: one nests a single key 5,383 levels deep, the most a maximum-size transaction can hold, and the other uses a multisig threshold of -1, which the ledger treats as always satisfied [4][5]. The reference Haskell node accepted both [5], but several widely used tools that read the chain crashed on them. The Rust library Pallas ran out of stack memory or rejected the negative number, so Dolos indexers and the preprod aggregator and signers of Mithril (a multi-signature protocol whose signers are run by stake pool operators, SPOs) crashed on every restart. Indexers built on the Ogmios TypeScript client and the Amaru node also crashed, and Yaci Store silently dropped the block [1][2][3][12][13][15]. Pallas, Dolos and Mithril shipped fixes within about 22 hours; Mithril also deployed its hotfix to mainnet and told mainnet signers to upgrade [8][9][11]. No funds were lost, mainnet was not disrupted and the Cardano L1 was not at fault. Whether the concurrent cardano-node 11.1.2 release, which Intersect later called a critical upgrade prompted by "an issue discovered on the Preprod testnet in September", is related has not been established [21]. On 13 October 2026 the Ogmios TypeScript client and Oura were still unfixed [12][17].
 
 ## Timeline (UTC)

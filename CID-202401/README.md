@@ -44,6 +44,8 @@ last_updated: 2026-10-13
 
 # CID-202401: Liqwid Faulty Oracle Transaction
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > At 23:26 UTC on 10 January 2024, Liqwid, a lending protocol on Cardano, wrote wrong prices for the stablecoins DJED and iUSD into its on-chain price oracle [1][8]. The prices came from a CoinGecko feed that was relaying bad data from the WingRiders exchange, whose backend, by WingRiders' account, had run out of memory and lost track of token decimals [1][4]. Before Liqwid paused the protocol about 15 minutes later, five positions were liquidated, with about 110,000 ADA (about USD 63k) of collateral seized, and three went into default [5][12]. Almost all of the seized ADA was returned voluntarily, and Liqwid compensated the remaining losses in its LQ token from its Safety Pool after a governance vote, reporting no bad debt [1][5]. The Cardano L1 was not at fault. Liqwid moved the affected feeds to Charli3 oracles on 19 January 2024 and later adopted price limits and a single-person "kill switch" [1][7].
 
 ## Timeline (UTC)

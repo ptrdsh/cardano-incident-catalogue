@@ -47,6 +47,8 @@ last_updated: 2026-10-13
 
 # CID-202504: Fake Eternl Desktop Phishing Campaign
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > In late December 2025, Cardano users received a polished phishing email announcing an "Eternl Desktop" application for the Cardano wallet Eternl, with the promise of NIGHT and ATMA token rewards from Atrium's "Diffusion Staking Basket" [1][7][8]. The email linked to a lookalike domain, `download.eternldesktop.network`, registered on 21 December 2025 [3]. The Windows installer it served contained no wallet: it silently installed GoTo Resolve (formerly LogMeIn Resolve), a legitimate remote-administration product, set up for unattended access, so that whoever controlled the attacker's GoTo Resolve account could take over the victim's computer [1][7][9]. An independent researcher exposed the campaign on 30 December 2025, and security and crypto media repeated the warning on 2–4 January 2026 [1][7][8][9][10][11][12][13]. No victims or stolen funds have been reported. Eternl's software and channels were not compromised, only its brand was used, and the Cardano L1 was not involved. No statement by Eternl and no takedown of the domain have been found. In March 2026 the same researcher documented a near-identical campaign impersonating the Yoroi wallet [2].
 
 ## Timeline (UTC)

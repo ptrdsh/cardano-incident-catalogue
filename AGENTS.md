@@ -10,17 +10,19 @@ This repository is a public catalogue of incidents on Cardano and in the dApps, 
 | `CLASSIFICATION.md` | Authoritative definitions and rating rules; wins over any summary elsewhere |
 | `TEMPLATE.md` | Header fields and section order for a report |
 | `CID-yyyyxx/README.md` | One incident per directory; images in `figures/` |
-| `tools/validate.py` | Structural checks; run before finishing any change |
+| `catalogue.csv` | Every report's classifiers in one file, generated from the headers |
+| `tools/validate.py` | Structural checks; `--write-catalogue` regenerates the README catalogue table and `catalogue.csv` from the headers. Runs on every pull request |
 
 ## Answering questions from the catalogue
 
-- Filter, count and compare on the YAML headers, not the prose. All headers in one line (needs PyYAML):
-  `[next(yaml.safe_load_all(p.read_text())) for p in Path(".").glob("CID-*/README.md")]`
+- Filter, count and compare on the YAML headers, not the prose. The README section *Questions the catalogue can answer* has a loader and example queries; use them as patterns and carry their notes into your answer.
+- The catalogue is not exhaustive. A count is the number of catalogued incidents, a lower bound, never a statistic about Cardano; say so.
 - Do not call an incident a Cardano failure unless `l1_at_fault` is `true`. A SEV-1 in a dApp says nothing about the protocol.
 - `null` is unknown, not zero. When summing losses, say how many incidents have no figure. Losses are gross; do not net out reimbursements.
 - Status and figures are as of the report's `last_updated` date. Say so when it matters.
 - Cite the incident ID and the report's source numbers. Carry over the report's caveats (*Disputed or open points*), and flag claims that rest only on **[S]** sources.
 - If you add knowledge from outside the catalogue, say that it is not from the catalogue.
+- No header field records whether an application (a DEX, wallet or bridge) was unusable. For such questions, use the dimension named in each report's *Impact* rating sentence ("on availability").
 
 ## Adding a report
 
@@ -29,12 +31,13 @@ This repository is a public catalogue of incidents on Cardano and in the dApps, 
 3. Gather primary sources first: the affected party's statements and post-mortems, repositories, release notes, on-chain data. Use secondary sources to fill gaps, and say where only secondary sources exist.
 4. Copy `TEMPLATE.md`. File a `stub` if the facts are thin; do not pad a report to reach `full`.
 5. Classify strictly by `CLASSIFICATION.md` and record every judgement call in `classification_notes`.
-6. Add the catalogue row to `README.md`. The validator prints the expected row.
+6. State under the title that the report was generated with AI and name the model, as the existing reports do.
+7. Run `python3 tools/validate.py --write-catalogue`. It adds the report to the README catalogue table and `catalogue.csv`; never edit either by hand.
 
 ## Editing an existing report
 
 - Read the whole report, and the parts of `CLASSIFICATION.md` you rely on, before changing anything.
-- A changed classification value needs a rule from `CLASSIFICATION.md`; name it in `classification_notes`. Keep the header, the closing rating sentence of *Impact* and the catalogue row in step.
+- A changed classification value needs a rule from `CLASSIFICATION.md`; name it in `classification_notes`. Keep the header and the closing rating sentence of *Impact* in step; `--write-catalogue` updates the catalogue row and `catalogue.csv`.
 - When shortening, keep every sourced fact; state it fully once and refer to it elsewhere.
 - `related` links need a shared root cause, the same project or a causal link (`CLASSIFICATION.md`, section 9), and must be added or removed on both reports.
 - Touch other reports only for those back-links. Set `last_updated` on every report you change.
@@ -55,5 +58,5 @@ This repository is a public catalogue of incidents on Cardano and in the dApps, 
 
 ## Before you finish
 
-- `python3 tools/validate.py` passes for every report. It checks structure only; the facts still have to stand up against the sources.
+- `python3 tools/validate.py --write-catalogue` passes for every report. It checks structure only; the facts still have to stand up against the sources.
 - Report what you changed, every classification value you changed and why, and anything you could not verify.

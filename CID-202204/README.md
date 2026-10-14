@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202204: Node 1.35.x Minimum-Fee Bug, Mainnet Forks and Rollback to 1.34.1
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > In July 2022, ahead of the Vasil upgrade, some Cardano stake pool operators (SPOs) ran the new node versions 1.35.0, 1.35.1 or 1.35.2 on mainnet, which IOG had told them they were free to do [7]. These versions had a fault in the ledger rules of the era then live on mainnet (Alonzo): when checking that a transaction paid enough fee, they ignored the cost of running its smart-contract scripts [1][2][3]. From about 22 July, blocks from these nodes that contained an underpaying script transaction were accepted by other 1.35.x nodes but rejected as invalid by the majority, which ran 1.34.1. The result was a series of short forks in which the affected pools, and other 1.35.x pools that built on their blocks, lost those blocks [1][6]. The stake pool ATADA and the block-monitoring site PoolTool spotted the pattern, and on 26 July an operator's logs led a ledger maintainer to the cause [1][13]. The same day IOG told operators on 1.35.0 or 1.35.1 to roll back to 1.34.1; it added 1.35.2 to that instruction on 29 July [8]. The majority chain always won, so the chain never split for good and no funds were lost. The fix shipped in node 1.35.3 on 11 August [5]; by the Vasil hard fork on 22 September 2022, 99% of blocks came from 1.35.3 [10][12]. Had a faulty version reached the 75% adoption IOG required before triggering the hard fork, mainnet could have split into two chains [9].
 
 ## Timeline (UTC)

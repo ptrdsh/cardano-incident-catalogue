@@ -45,6 +45,8 @@ last_updated: 2026-10-13
 
 # CID-202604: Splash StableSwap Pool Exploit (ADA/OADA)
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > On 13 September 2026 an attacker drained the ADA/OADA StableSwap pool on the Cardano DEX Splash in two transactions 45 seconds apart, taking 2,424,778 ADA (net of their own deposit) and 1,988,222 OADA, about $915k with OADA valued at its 1:1 ADA peg [1][16]. Splash's pool smart contract (validator) never checked that the pool's "tradable" reserves stayed positive, so an economically impossible trade passed validation; the Cardano base layer was not at fault [1]. Because the pool was the only documented way to convert Optim Finance's ADA-pegged token OADA back to ADA, Optim paused its protocol and OADA holders lost their exit [5][9]. Splash published a detailed root-cause analysis and funds trace the same day and marked the code unsafe [1][2]. As of 13 October 2026 no funds have been returned, no fixed validator has been published and OADA exit liquidity has not been restored; Optim opened a claims portal on 9 October with distributions planned before the end of 2026 [2][17].
 
 ## Timeline (UTC)

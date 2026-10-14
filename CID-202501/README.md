@@ -45,6 +45,8 @@ last_updated: 2026-10-13
 
 # CID-202501: Pig vs Chicken Chainsplit
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > On 21 November 2025 at about 08:00 UTC, a stake-delegation transaction carrying a 56-byte stake pool identifier, where exactly 28 bytes are required, split Cardano mainnet into two chains for about 14 hours [3]. Node versions 10.3.1 to 10.5.1, run by about two thirds of active stake, accepted it because a bug in the node's `cardano-base` library silently truncated oversized hashes; older nodes and most downstream tooling (the Daedalus wallet, cardano-db-sync, explorers) rejected it, so the root cause lies in Cardano L1 software [1][3]. Responders called the accepting fork the "pig" chain and the rejecting, specification-conformant fork the "chicken" chain [3][6]. Blocks kept being produced, but transactions took up to several minutes to confirm, exchanges suspended ADA deposits and withdrawals, and 499 transactions ended up only on the discarded chain [3][4][15]. A fix prepared after the same bug hit the Preview testnet the day before was rolled out, and at 22:18 UTC the chicken chain overtook the pig chain and every node converged on it automatically [3]. No funds were stolen and there was no on-chain double spend; off-chain losses have not been assessed publicly [2][3]. The submitter called it a careless, AI-assisted experiment and Cardano founder Charles Hoskinson a premeditated attack; intent remains disputed, and Intersect engaged authorities including the FBI [1][17][18].
 
 ## Timeline (UTC)

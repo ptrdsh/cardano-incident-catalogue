@@ -37,7 +37,7 @@ Severity is assessed per impact dimension; **the overall rating is the highest l
 | **SEV-4** | Low | — | Localised or short (< 24 h) unavailability of a single dApp, wallet or service; degraded user experience | 1 – 9,999 | Contained compromise or misinformation without demonstrated user harm |
 | **SEV-5** | Informational | — | No user-visible impact | None | None — e.g. a vulnerability found and fixed before any exploitation, a process failure caught internally |
 
-The header fields `impact.consensus_safety` and `impact.liveness` describe Cardano L1 mainnet only. A dApp or wallet outage can therefore have `impact.liveness: none` while still receiving SEV-3 or SEV-4 on the availability dimension. Describe application and service availability in `impact.users_affected` and the report.
+The header fields `impact.consensus_safety` and `impact.liveness` describe Cardano L1 mainnet only. `consensus_safety` is `true` when honest nodes followed diverging chains or disagreed on block validity. `liveness` is `halted` when block production stopped, `degraded` when block production or transaction inclusion on mainnet was measurably impaired, whether or not the network-wide degradation threshold below was reached, and `none` otherwise. A dApp or wallet outage can therefore have `impact.liveness: none` while still receiving SEV-3 or SEV-4 on the availability dimension. Describe application and service availability in `impact.users_affected` and the report.
 
 ### Network availability definitions
 
@@ -82,6 +82,10 @@ There is no separate technical/organisational field. Layer `organisational`, the
 | `wallet` | Wallet software, hardware wallet apps, key derivation and signing | Faulty signature nonce leaking private keys |
 | `dapp` | On-chain validators and off-chain components (batchers, matchmakers, front-ends) of applications: DEXes, lending, marketplaces, bridges, stablecoins | Validator missing a check, drained pool |
 | `organisational` | Governance processes, legal entities, operations, communications, people | Hijacked official social media account |
+
+### L1 at fault
+
+`l1_at_fault` records whether the root cause lies in the Cardano L1 itself: the protocol (ledger rules, consensus, Plutus evaluation) or the node software that runs mainnet. It is `true` or `false`. In practice `true` goes with layer `protocol`; incidents rooted in applications, wallets, tooling, infrastructure or organisations built on Cardano are `false`, however severe. Borderline cases, such as a defect shared by an alternative node implementation not yet used to run mainnet, are explained in `classification_notes`.
 
 ## 3. Incident class
 

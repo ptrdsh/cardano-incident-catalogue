@@ -48,6 +48,8 @@ last_updated: 2026-10-13
 
 # CID-202402: Lenfi BTN Liquidations Incident
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > Lenfi, a lending protocol on Cardano, values collateral in its V2 pools by how much ADA it would fetch if sold into a hand-maintained list of approved DEX (decentralised exchange) pools, not by a quoted market price. Late on 11 May 2024 (UTC), a liquidity provider moved almost all liquidity for BTN, the token of the Butane protocol, out of Spectrum, the only BTN pool on Lenfi's list, into a new SundaeSwap V3 pool that Lenfi did not track. The BTN market price did not change, but Lenfi's valuation of BTN collateral collapsed, and within three hours 39 loans were liquidated: 415,016 BTN seized against 132,810 ADA of debt. Lenfi put the borrowers' loss at 310,043 BTN, about USD 181,000 by our estimate. A valid list entry for the new pool was in place about 5 hours 45 minutes after the first withdrawal, and Lenfi published a post-mortem the next day. On 13 June 2024 Butane, the Lenfi team and the Lenfi DAO compensated each liquidated loan, about 18% of the value in Lenfi's LENFI token rather than BTN. The Cardano L1 was not at fault.
 
 ## Timeline (UTC)

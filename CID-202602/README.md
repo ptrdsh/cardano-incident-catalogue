@@ -45,6 +45,8 @@ last_updated: 2026-10-13
 
 # CID-202602: DeltaDeFi Hydra DEX Operational Pause
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > DeltaDeFi, built by SIDAN Lab, was an order-book decentralised exchange (DEX) that matched trades inside a Hydra head, Cardano's layer-2 state channel; the press called it the first Hydra-powered DEX on Cardano [2][3]. After DReps rejected a ₳1.5 million Treasury request [19][20], the team paused operations on 15 July 2026 "until further notice", citing "the lack of operation runway" [1]. Twenty-six minutes before the announcement, five administrative keys moved all deposits in DeltaDeFi's on-chain vault (about USD 98,000) to a single key address; two hours later most of the ADA went to 17 addresses [11][12][14]. The team promised refunds where Cardano's minimum-ADA rule allowed [1] but has published no refund ledger or confirmation that all users were repaid. No theft or loss has been reported; as of 13 October 2026 the app remains in maintenance mode [26]. Neither the Cardano L1 nor the Hydra protocol was at fault: users who are not participants in an operator's Hydra head depend on the operator, not on Hydra's guarantees, when it stops.
 
 ## Timeline (UTC)

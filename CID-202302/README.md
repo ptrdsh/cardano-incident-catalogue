@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202302: Djed Reserve Ratio Breach and Depeg
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > DJED is a US-dollar stablecoin on Cardano, issued by COTI and backed by a reserve of ADA that its rules require to be worth at least 400% of the DJED in circulation (target range 400% to 800%) [2]. In June 2023 ADA fell after US SEC lawsuits described it as a security, and the reserve ratio dropped below 400%: 272% on 10 June, about 300% on 11 June and 346% on 4 July [9][10][14][17]. Below 400% the contract, as designed, stops anyone minting new DJED and stops holders of the reservecoin SHEN redeeming it; DJED itself stayed redeemable at the protocol for 1 USD worth of ADA [1][2]. With minting switched off, DJED traded **above** USD 1 on Cardano DEXes, at about USD 1.02 to 1.08. COTI said the protocol worked as designed and DJED kept its peg; critics called the premium a depeg [1][9][10]. No funds were drained or stolen, and the Cardano L1 was not at fault. COTI's monthly figures show the ratio below 400% until November 2023 and above it from December; COTI did not announce the recovery [3]. The design is unchanged, and on 13 October 2026 the ratio was again at the 400% floor [4].
 
 ## Timeline (UTC)

@@ -48,6 +48,8 @@ last_updated: 2026-10-13
 
 # CID-202406: Lenfi V2 Smart Contract Vulnerability
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > In December 2024 Lenfi's lead developer found a critical flaw in the pool contract of Lenfi V2, a lending protocol on Cardano: anyone holding a few of a pool's liquidity-provider (LP) tokens could withdraw far more than their share, up to all of the pool's funds not currently lent out [5][7]. Without naming a vulnerability, Lenfi urged borrowers to repay and depositors to withdraw [1][19]. About two days later it used the flaw itself to move what remained, about 1.19 million ADA plus native tokens (roughly USD 1.34 million in ADA alone), into a team wallet, and four days after that it paid those funds out to LP token holders [2][3][16][23]. No third-party exploitation has been reported, but Lenfi V2 was not reopened. The Cardano L1 was not at fault: the bug was a reversed inequality in Lenfi's own validator that two audits and a six-month bug bounty had missed [5][10][11][13]. Lenfi V1 (peer-to-peer lending) uses different contracts and was not affected [19].
 
 ## Timeline (UTC)

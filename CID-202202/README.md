@@ -45,6 +45,8 @@ last_updated: 2026-10-13
 
 # CID-202202: Minswap LP Token Minting Vulnerability
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > Developers from WingRiders found a critical flaw in Minswap, a decentralised exchange (DEX) on Cardano, shortly after its March 2022 mainnet launch. The flaw let anyone duplicate the "pool NFT" that identifies a liquidity pool, mint unlimited liquidity-provider (LP) tokens and withdraw the pool's reserves [1][2][3]. WingRiders disclosed it privately [2]. Minswap stopped processing orders, reported a 50-hour maintenance period and used the flaw to move all liquidity into patched contracts [1][8]. It reported no loss and intact user positions, but replacement LP tokens were still being distributed when it published its technical account [1]. A secondary report the next day said the DEX had left maintenance [9]. The flaw was in Minswap's application contracts, not the Cardano protocol [3].
 
 ## Timeline (UTC)

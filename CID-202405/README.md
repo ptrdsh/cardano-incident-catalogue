@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202405: Cardano Foundation X Account Compromise (ADAsol scam)
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > On 8 December 2024 an unknown attacker took over the Cardano Foundation's official X account, @Cardano_CF, and, by the Foundation's account, kept access for about four days [2]. On the first day the attacker used it to promote "ADAsol", a fake Cardano-branded token on Solana, and then to post a false notice that the US SEC had sued the Foundation and that it would stop supporting ADA [3]. The token traded about USD 500,000 in volume before collapsing; that is volume, not losses, and no loss figure has been published [3][14]. The Cardano blockchain was not affected. The Foundation warned users through its website the same day [1], says the unauthorised access ended on 12 December, and announced the recovery on 13 December with a cryptographically signed message [2]. It has not published how the account was compromised or what its investigation found, and no compensation for token buyers has been announced.
 
 ## Timeline (UTC)

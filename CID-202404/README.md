@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202404: Conway Ledger State Replay Bug after Chang Hard Fork
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > When Cardano mainnet entered the Conway ledger era with the Chang hard fork at 21:44 UTC on 1 September 2024, the node versions operators ran for the fork, cardano-node 9.0.0 and 9.1.0, began saving ledger state snapshots that they could not read back [1][7]. Running nodes kept working, but a node restarted more than about 14 hours after the fork had to rebuild its ledger by replaying the whole chain from the first (genesis) block, staying offline for about 75-90 minutes, and did so again on every later restart [5][7]. The cardano-db-sync indexer could not read its own snapshots either [13]. The core teams had found the bug and merged a fix about 16 hours before the fork [2][3], but the fixed node, 9.1.1, was published about 19 hours after it [4], and a working db-sync release followed on 4 September [14]. Until they upgraded, operators were told not to restart any node [1][5][6]. The chain ran without interruption [10], there was no chain split and no funds were at risk. The root cause was in Cardano's own node software, so the L1 was at fault.
 
 ## Timeline (UTC)

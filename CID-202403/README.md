@@ -44,6 +44,8 @@ last_updated: 2026-10-13
 
 # CID-202403: Reference Script Spam (DDoS) Attack on Mainnet
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > On 24 and 25 June 2024 an unidentified attacker sent 4,422 spam transactions to Cardano mainnet from three wallets [1][19]. Each paid an ordinary fee of about 0.91 ADA but made every validating node load and decode about 3 MB of Plutus scripts stored elsewhere on the chain ("reference scripts"), work the fee rules of the time did not charge for [2][19]. The chain never stopped, but during the 11.4-hour main wave on 25 June blocks were produced at about 79% of the expected rate, block producers ran under higher load and transactions confirmed more slowly [1][3][19]. No user funds were lost [1][3][22]. The weakness lay in the Cardano ledger's fee rules, so the L1 was at fault [1][2]. The attack stopped that evening, shortly after a community developer pointed out publicly that anyone could deregister the attacker's own stake credentials and keep their deposits, which would also invalidate its pending attack transactions [4][5][19]. Emergency node releases 8.9.4 and 8.12.1 followed on 27 June, and the Chang hard fork on 1 September 2024 made escalating reference-script fees and hard size caps part of the ledger rules [1][2][8][9][14].
 
 ## Timeline (UTC)

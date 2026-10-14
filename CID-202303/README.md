@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202303: MuesliSwap Matchmaker Slippage Retention and Refunds
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > MuesliSwap is a decentralised exchange (DEX) on Cardano whose trades are filled by third-party "matchmakers" (batchers). Users who set a high value in a front-end setting labelled "slippage" could have their orders filled at that limit rather than at the market price, with the matchmaker keeping the difference, as MuesliSwap's contracts allow [1][3][4][5][9][11]; MuesliSwap said this had been the case "since the beginning" [5][7]. After users complained publicly in early August 2023 [9], MuesliSwap admitted it had "fell short in providing adequate clarity", said it had fixed the order book, and promised to refund affected users for the previous 12 months from project funds [1][3][4]. The amounts retained and refunded were never published; three months later refunds were still handled through Discord support tickets instead of the promised self-claim site [15][16], and no later source confirms completion. No unauthorised contract exploit is established: matchmakers acted within the documented contract rules. The Cardano protocol was not at fault.
 
 ## Timeline (UTC)

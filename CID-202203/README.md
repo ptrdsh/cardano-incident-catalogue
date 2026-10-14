@@ -45,6 +45,8 @@ last_updated: 2026-10-13
 
 # CID-202203: SECP256k1 Binding Flaw and Legacy Testnet Incompatibility
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > In July 2022, tests found that two planned Plutus functions for verifying ECDSA and Schnorr signatures passed unchecked bytes to the libsecp256k1 C library where parsed keys were required [1][2]. The defect was triggered on Cardano's legacy public testnet, and node 1.35.3 later could not replay history accepted by 1.35.2 [1][13]. IOG kept the legacy network on 1.35.2, launched the replacement testnets Preview and Pre-Production on 19 August 2022 and listed the legacy network as deprecated [11][15]. The functions never activated on mainnet: rewritten and audited bindings reached it with the Valentine hard fork on 14 February 2023 [1][19][20]. No mainnet users or funds were affected. The official report assessed that, had the functions been live on mainnet, malformed input could potentially have crashed all nodes [1].
 
 ## Timeline (UTC)

@@ -47,6 +47,8 @@ last_updated: 2026-10-13
 
 # CID-202201: SundaeSwap Launch Congestion and Failed Orders
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > SundaeSwap opened swapping on Cardano mainnet at 21:45 UTC on 20 January 2022. Demand exceeded the end-to-end capacity of its first-version batching design: about 11,000 orders were queued within five hours, and many trades were still waiting on 30 January [7][15]. Users could cancel pending orders and no source reports loss of principal [10][15]. Cardano continued producing blocks without a consensus or security failure; its conservative capacity settings amplified a dApp-level bottleneck rather than malfunctioning [1][15]. IOG increased protocol limits over the following weeks, and SundaeSwap later launched its redesigned v3 protocol in May 2024 [3][4][13][17][22]. The exact date the 2022 backlog cleared is not published.
 
 ## Timeline (UTC)

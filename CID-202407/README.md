@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202407: Plomin Hard Fork DoS Vector and Mandatory Hotfix 10.1.4
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > In late December 2024 a community member testing on Cardano's pre-production testnet (preprod) reported that certain transactions could make nodes unstable once Protocol Version 10, the "Plomin" hard fork, took effect [1]. Plomin was to be Cardano's first hard fork enacted through on-chain governance, and the mainnet vote on it was under way [10][14]. Developers traced the issue to votes cast by constitutional committee (CC) credentials without a seat on the currently elected committee, and changed the ledger so that nodes reject such votes before they enter the mempool, the queue of transactions waiting for a block [4][6]. The fix shipped as cardano-node 10.1.4 on 7 January 2025. Its release notes required every stake pool and relay to upgrade and warned that nodes left behind risked a denial-of-service (DoS) attack after the fork [2]. By 22 January, 89% of blocks in the current epoch were made with 10.1.4 [14], and Plomin took effect on mainnet at 21:44:51 UTC on 29 January 2025 [15] with no reported exploitation, outage or loss of funds. The defect was in Cardano's ledger software, so the L1 was at fault; the cost was an unscheduled, mandatory node upgrade in the middle of the hard fork vote.
 
 ## Timeline (UTC)

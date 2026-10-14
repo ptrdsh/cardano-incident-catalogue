@@ -48,6 +48,8 @@ last_updated: 2026-10-13
 
 # CID-202603: Wanchain Cardano Bridge Exploit (NIGHT)
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > On 20 July 2026, between 14:46 and 14:55 UTC, an attacker withdrew about 515.2 million NIGHT, the Midnight network's token issued as a Cardano native asset, from the Cardano-side treasury of Wanchain's Cardano–BNB Chain bridge in four transactions [11][14]. The tokens were worth about USD 10 million at the time and made up roughly 98% of the reserve backing Wanchain-wrapped NIGHT on BNB Chain [14]. No keys were stolen and no signatures forged. Wanchain's Cardano smart contract checked approvals from Wanchain's signing network against a message built by joining several fields with nothing marking where one ended and the next began, so the attacker could present a valid approval for a small withdrawal as approval for a much larger one [1][6]. The flaw was in Wanchain's contract, not in Cardano: the ledger ran the contract as written, the Midnight network was unaffected and no new NIGHT was created [1][9][14]. Wanchain suspended the bridge, published a short post-mortem and offered the attacker a 10% bounty to return the rest by 6 August 2026 [1][2][3]. As of 13 October 2026 no return or compensation plan has been made public [14][19], and the bridge's NIGHT reserve has not been refilled [11].
 
 ## Timeline (UTC)

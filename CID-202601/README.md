@@ -65,6 +65,8 @@ last_updated: 2026-10-13
 
 # CID-202601: SecondFi Wallet Signing Nonce Flaw
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > Between 21 and 23 June 2026, attackers stole about 16.1 million ADA (about US$2.4 million at the time) from 374 wallets of SecondFi, the self-custody Cardano wallet app that EMURGO had rebranded from Yoroi in April 2026 [9][14][27]. Every Cardano transaction is authorised by a digital signature, and each signature contains a one-time number (the "nonce") that must be derived from the wallet's secret key; anyone who knows the nonce can calculate the private key from the signature. An app update shipped on 8 June 2026 derived the nonce from the transaction data alone, which is public on the blockchain, so a single transaction signed with the update let anyone work out that address's private key and empty it [9][22][23]. During the attack SecondFi itself moved about 129 million ADA out of exposed wallets and said it would hold the funds with a third-party custodian for the affected users [4]. The Cardano protocol was not at fault, and hardware-wallet users were not affected [10][21]. SecondFi never reopened, and on 22 July 2026 it announced the wind-down of both SecondFi and Yoroi [8][9]. A recovery portal opened on 7 October 2026, but by 13 October 2026 no figures on completed returns had been published, and the recovery terms warn that users may get back less than they lost [12][13].
 
 ## Timeline (UTC)

@@ -43,6 +43,8 @@ last_updated: 2026-10-13
 
 # CID-202301: Mass Node Disconnection and Restart
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > At about 00:09 UTC on Sunday 22 January 2023, roughly half of Cardano mainnet's relay and block-producing nodes crashed at the same moment and restarted automatically [2][9]. Block production slowed but did not stop: for about five minutes, blocks arrived 92 to 123 seconds apart instead of about every 20 seconds [3]. No network-wide restart was needed, the chain did not split, and no source reports any loss of funds [2][9][10]. The cause was a bug in the node's own ledger code, so the L1 was at fault: a data structure holding native-token (multi-asset) balances could become internally unbalanced, making the node abort [8][9]. IOG first called the event a "transient anomaly" [2], later classified it as critical [9], and shipped a fix in cardano-node 1.35.5 on 2023-01-27, keeping details private until enough stake pool operators (SPOs) had upgraded [4][9][10].
 
 ## Timeline (UTC)

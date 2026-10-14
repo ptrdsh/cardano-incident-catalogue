@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202503: 318M ADA Unredeemed-Voucher Funds, Disclosure Gap and Independent Review
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > In December 2020 the Allegra hard fork swept about 318.2 million ADA belonging to 390 unredeemed pre-launch vouchers into Cardano's protocol reserves, and in October 2021 a transfer signed with the genesis keys (the governance keys held by Cardano's three founding entities before on-chain governance) sent it to custodial staking addresses that funded a manual, off-chain redemption process [1][3][4]. The movements were visible on-chain, but their amounts, custody and use were not publicly accounted for until 2025 [1][9][11]. In May 2025 the NFT artist Masato Alexander alleged that Charles Hoskinson and Input Output Global (IOG) had used the genesis keys to take control of the ADA [6][7]. A review that IOG commissioned from the law firm McDermott Will & Schulte and the accounting firm BDO found the allegations had no basis, reconciled the funds and reported that 99.7% of the ADA sold had been redeemed [1][2]. No loss of user funds has been established, and the Cardano protocol behaved as specified. The episode set off a public dispute between Hoskinson and the Cardano Foundation [22]; one prominent critic retracted in October 2025 [16][17], while the original accuser has shared posts calling the review unreliable [24].
 
 ## Timeline (UTC)

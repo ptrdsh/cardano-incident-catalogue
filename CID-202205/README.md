@@ -46,6 +46,8 @@ last_updated: 2026-10-13
 
 # CID-202205: Ardana Stablecoin Project Halts Development
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > Ardana was building a US-dollar stablecoin (dUSD) and a stable-asset exchange (Danaswap) on Cardano. It announced USD 10 million of investment in October 2021, sold its DANA token to the public, and from July 2022 ran an Initial Stake Pool Offering (ISPO), paying DANA to delegators of partner stake pools [3][4][16]. In January 2022 it said almost all development was finished [2]; on 24 November 2022 it halted the project, citing "funding and project timeline uncertainty" [1][12]. No product launched, so no user deposits were at risk; the losses fell on investors and token holders, and DANA lost 42–83% of its price within a day [12][13][15]. Ardana said Ardana Labs would hold the remaining funds pending a successor team [16]; no handover, refund or financial statement has followed. In September 2023 the risk-analytics firm Xerberus alleged that up to USD 4 million of the raised money had been lost in speculative trading [19][20]; the allegations are unverified and unanswered by Ardana [20]. The Cardano L1 was not at fault.
 
 ## Timeline (UTC)

@@ -44,6 +44,8 @@ last_updated: 2026-10-13
 
 # CID-202502: Milkomeda C1 Sidechain Sunset and Frozen Residual Funds
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > Milkomeda C1 was an EVM sidechain for Cardano built by dcSpark. Its bridge locked ADA and Cardano tokens on Cardano and issued wrapped equivalents on C1, such as "MilkADA" for ADA [6][8][20]. On 22 April 2025 the project announced on X that it would shut down, that users had to withdraw before 1 September 2025 and that "any funds left after that deadline will be frozen" [1]. The sidechain went offline on 5 September 2025 [4][5]. Nothing was hacked, but about 1.86 million ADA (about USD 1.5 million at the shutdown price) plus 89,274 ADA of staking rewards remain at the bridge's Cardano addresses. These funds are controlled by an operator multisig and have not moved since 4 September 2025 [11][12][15][17]. How much of this belongs to users is not public, and no claim or release process has been announced. The Cardano L1 was not at fault; the lasting harm comes from a bridge design that gives users no way to withdraw once the operator stops.
 
 ## Timeline (UTC)

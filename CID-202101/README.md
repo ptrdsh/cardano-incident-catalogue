@@ -44,6 +44,8 @@ last_updated: 2026-10-13
 
 # CID-202101: Marketplace Double-Satisfaction Vulnerability (jpg.store)
 
+*This report was generated with AI (Claude Opus 5.5) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+
 > On 22-23 November 2021, about two weeks after launch, the Cardano NFT marketplace jpg.store asked users to delist their NFTs after Vacuumlabs found an exploitable validator flaw [1][12]. The founder's warning named Adapix and Genesis House as also exposed [8]. No exploitation or loss is known [2][13]. jpg.store deployed a replacement contract about 20 hours after its public warning and asked sellers to relist; Genesis House also patched its contract that day [5][9]. The Cardano network was unaffected. jpg.store did not publish the promised post-mortem, so the attribution to double satisfaction rests on related technical accounts rather than a published analysis of its BuySellV1 code [5][11][13][15].
 
 ## Timeline (UTC)

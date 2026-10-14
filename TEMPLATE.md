@@ -21,7 +21,7 @@ severity: SEV-1                      # actual impact, SEV-1 (critical) .. SEV-5 
 potential_severity: SEV-1            # worst credible impact if unmitigated
 status: resolved                     # resolved | contained | unresolved | ongoing | other
 recoverability: routine              # routine | extra-resources | escalated | not-recoverable | other (NIST SP 800-61r2 categories)
-l1_at_fault: false                   # true if the root cause is in the Cardano protocol or node software
+l1_at_fault: false                   # true if the root cause lies in the Cardano L1 (protocol or node software)
 affected:
   projects: []                       # e.g. [cardano-node, Minswap]
   components: []                     # e.g. [ledger CBOR decoder, LP minting policy]
@@ -45,6 +45,9 @@ last_updated: YYYY-MM-DD
 ---
 
 # CID-yyyyxx: Title
+
+*This report was generated with AI (model name) from the public sources listed under Sources. To correct or remove content, see [Corrections and removals](../README.md#corrections-and-removals).*
+<!-- Keep this line if AI drafted the report and name the model; otherwise delete it. -->
 
 > One-paragraph executive summary: what happened, impact, whether funds were lost,
 > whether the Cardano L1 was at fault, and how it ended. Written for a non-technical
